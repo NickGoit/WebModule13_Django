@@ -8,6 +8,10 @@ class RegisterForm(UserCreationForm):
                                required=True,
                                widget=forms.TextInput(attrs={"class": "form-control"}))
 
+    email = forms.CharField(max_length=100,
+                            required=True,
+                            widget=forms.TextInput(attrs={"class": "form-control"}))
+
     password1 = forms.CharField(max_length=50,
                                 required=True,
                                 widget=forms.PasswordInput(attrs={"class": "form-control"}))
